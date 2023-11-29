@@ -1,6 +1,6 @@
 # Tables
 
-[The Odin Project]() &nbsp;>&nbsp; [Intermediate HTML & CSS]()
+[The Odin Project]() &nbsp;>&nbsp; [Intermediate HTML & CSS]() &nbsp;>&nbsp; [Intermediate HTML Concepts]()
 
 HTML Tables allow you to create two-dimensional tables made of rows and columns. In this lesson, you will learn everything you need to know about HTML Tables.
 

@@ -1,6 +1,6 @@
 # SVG
 
-[The Odin Project]() &nbsp;>&nbsp; [Intermediate HTML & CSS]()
+[The Odin Project]() &nbsp;>&nbsp; [Intermediate HTML & CSS]() &nbsp;>&nbsp; [Intermediate HTML Concepts]()
 
 SVGs are a very common image format on the web. They can be a little confusing at first, but once you know how to use them, they are an incredibly powerful tool for creating high-quality, dynamic images for your website.
 

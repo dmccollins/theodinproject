@@ -1,6 +1,6 @@
 # Emmet
 
-[The Odin Project]() &nbsp;>&nbsp; [Intermediate HTML & CSS]()
+[The Odin Project]() &nbsp;>&nbsp; [Intermediate HTML & CSS]() &nbsp;>&nbsp; [Intermediate HTML Concepts]()
 
 Emmet is a plugin, built into VS Code, that helps you write HTML and CSS more efficiently by providing a bunch of clever shortcuts. By now, you have written a good amount of HTML and CSS, and if you have been using VS Code there’s a big chance that you have already encountered Emmet in some way.
 
