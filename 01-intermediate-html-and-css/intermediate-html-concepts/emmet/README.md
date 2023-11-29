@@ -55,15 +55,25 @@ You can now add a shortcut to it by clicking the plus sign and entering whicheve
 
 This section contains questions for you to check your understanding of this lesson. If you’re having trouble answering the questions below on your own, review the material above to find the answer.
 
-- [Why should you use Emmet?](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-emmet#emmet)
+- **Why should you use Emmet?**
 
-- [What are some useful Emmet abbreviations?](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-emmet#emmet)
+  - Emmet is a plugin, built into VS Code, that helps you write HTML and CSS more efficiently by providing a bunch of clever shortcuts.
 
-- [What syntax would you use to create this element `<p class="text"></p>` ?](https://docs.emmet.io/cheat-sheet/)
+- **What are some useful Emmet abbreviations?**
 
-- [What syntax expands to an element with a child element inside of it? For example: `<div><p></p></div>`](https://docs.emmet.io/cheat-sheet/)
+  - Wrap with Abbreviation, Remove Tag
 
-- [What syntax would you use to create three elements that have the same class name?](https://docs.emmet.io/cheat-sheet/)
+- **What syntax would you use to create this element `<p class="text"></p>` ?**
+
+  - `p.text`
+
+- **What syntax expands to an element with a child element inside of it? For example: `<div><p></p></div>`**
+
+  - `div>p`
+
+- **What syntax would you use to create three elements that have the same class name?**
+
+  - `p.className*3`
 
 ## Additional resources
 
