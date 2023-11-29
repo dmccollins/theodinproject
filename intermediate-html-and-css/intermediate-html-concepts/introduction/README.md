@@ -1,8 +1,13 @@
-###### [The Odin Project]() / [Intermediate HTML & CSS]()
-
 # Intermediate HTML Concepts
 
-### Introduction
+[The Odin Project]() &nbsp;>&nbsp; [Intermediate HTML & CSS]()
+
+## Content
+
+1. [Introduction](#introduction)
+1. [Assignment](#assignment)
+
+## Introduction
 
 This is the first of the two part course where we dig deeper into HTML and CSS.
 
@@ -14,7 +19,7 @@ There is also a lot more that you can do with CSS that you’ll learn throughout
 
 You’ll learn about animations, accessibility, and responsive design in the second part of this course later in the curriculum.
 
-### Assignment
+## Assignment
 
 1. Read through this [HTML elements reference]() to get an overview of what other HTML elements are available to you. No need to commit this to memory because you’ll be learning the important parts as we go, but having a glance now will help the content stick later.
 
