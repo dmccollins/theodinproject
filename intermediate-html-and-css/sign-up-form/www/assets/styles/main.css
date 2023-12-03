@@ -1,26 +1,85 @@
-html {
-  box-sizing: border-box;
+:root {
+  --green: #596d48;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.wrapper {
+  font: 400 1.25rem "San Fransisco", sans-serif;
+  display: grid;
+  grid-template-columns: 535px auto;
+  min-height: 100vh;
+  width: 100%;
 }
 
-.new-section {
-  margin-top: 1rem;
+.constrained {
+  max-width: 650px;
+  width: 100%;
 }
 
-.block {
+header {
+  background: url("../images/halie-west-25xggax4bSA-unsplash.jpg") center center no-repeat;
+  background-size: cover;
+}
+header figure {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0 0;
+  padding: 1rem 0;
+}
+header figure img {
+  height: 127px;
+  max-width: 90px;
+  width: 100%;
+}
+header figure figcaption {
+  font: 6rem "Norse", monospace;
+  align-self: center;
+  padding-top: 2rem;
+}
+@font-face {
+  font-family: "Norse";
+  src: url("../fonts/Norse-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+main > * {
+  padding-left: 2rem;
+}
+main form {
+  background-color: white;
+  height: 18.8125rem;
+}
+main form .controllers {
+  display: flex;
+  flex-flow: row wrap;
+}
+main form .controllers div {
+  width: 300px;
+}
+main form .controllers div label {
+  color: #1f2937;
   display: block;
-  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
-
-.margin-right {
-  margin-right: 0.25rem;
+main form .controllers div input {
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
-
-.margin-left {
-  margin-left: 0.25rem;
+main form .controllers div input:focus {
+  border-color: #1d4ed8;
+  outline: none;
+}
+main form .controllers div input[type=password]:invalid {
+  border-color: #b91c1c;
 }/*# sourceMappingURL=main.css.map */

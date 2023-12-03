@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Danny McCollins">
+  <meta name="description" content="A new project">
+  <title>sign-up-form</title>
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+
+  <!-- <form> with labels, text inputs, and a button -->
+  <form action="https://httpbin.org/post" method="post">
+
+    <fieldset class="new-section">
+      <legend>General information</legend>
+      <div>
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" id="first_name" placeholder="John">
+      </div>
+      <div>
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" id="last_name" placeholder="Doe">
+      </div>
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+      </div>
+    </fieldset>
+
+    <fieldset class="new-section">
+      <legend>Profession</legend>
+      <div>
+        <label for="job">Job title:</label>
+        <select name="job">
+          <optgroup label="Development">
+            <option value="fe">Front-end</option>
+            <option value="be">Back-end</option>
+            <option value="op">DevOps</option>
+          </optgroup>
+          <optgroup label="Design">
+            <option value="designer">Designer</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="years_active">Years active:</label>
+        <input type="number" name="years_active" id="years_active">
+      </div>
+      <div class="new-section">
+        Are you interested in switching roles?
+        <div>
+          <input type="radio" id="yes" name="switch_role" value="yes">
+          <label for="yes">Yes</label>
+        </div>
+
+        <div>
+          <input type="radio" id="no" name="switch_role" value="no">
+          <label for="no">No</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="new-section">
+      <legend>Sign-up</legend>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="hello@example.com">
+      </div>
+      <div>
+        <label for="user_password">Password:</label>
+        <input type="password" id="user_password" name="password">
+      </div>
+    </fieldset>
+
+    <div class="new-section">
+      <label for="msg">Additional comments:</label>
+      <textarea class="block" id="msg" name="msg" rows="4" cols="35"></textarea>
+    </div>
+
+    <div class="new-section">
+      <input type="checkbox" id="tos" name="tos" value="accept">
+      <label for="tos">
+        I have read and understand the <a href="#">terms and conditions</a>
+        that apply to submitting this form.
+      </label>
+    </div>
+
+    <div class="new-section">
+      <button type="reset" class="margin-right">Reset</button> or
+      <button type="submit" class="margin-left">Submit form</button>
+    </div>
+  </form>
+
+</body>
+
+</html>
