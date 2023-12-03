@@ -66,8 +66,8 @@ main form .controllers div {
 main form .controllers div label {
   color: #1f2937;
   display: block;
-  font-size: 0.75rem;
-  letter-spacing: 1px;
+  font-size: 0.625rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 main form .controllers div input {
