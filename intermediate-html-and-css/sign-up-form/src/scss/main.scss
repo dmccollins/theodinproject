@@ -1,8 +1,4 @@
-:root {
-  --green: #596d48;
-}
-
-.wrapper {
+.container {
   font:
     400 1.25rem "San Fransisco",
     sans-serif;
@@ -11,10 +7,15 @@
   grid-template-columns: 535px auto;
   min-height: 100vh;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.constrained {
-  max-width: 650px;
+// all direct children of main (except <form>) and within form
+main > *:not(form),
+form > * {
+  max-width: 41.875rem;
+  padding-left: 5rem;
   width: 100%;
 }
 
@@ -52,100 +53,78 @@ header {
 }
 
 main {
-  background-color: #f9fafb;
-  font-weight: 600;
-  & > * {
-    padding-left: 2rem;
+  --color-white: #f9fafb;
+  --color-gray: #1f2937;
+  --color-ltgray: #e5e7eb;
+  --color-blue: #1d4ed8;
+  --color-red: #b91c1c;
+  --color-green: #596d48;
+
+  --font-sm: 0.75rem;
+
+  --gap: 1.625rem;
+
+  background-color: var(--color-white);
+  font-size: 1.3rem;
+  line-height: 1.5;
+
+  & > p:first-child {
+    margin-top: 7rem;
   }
+
   form {
     background-color: white;
-    height: 18.8125rem;
-    .controllers {
+    padding-top: 1.4375rem;
+
+    .controls {
+      column-gap: var(--gap);
+      row-gap: var(--gap);
       display: flex;
       flex-flow: row wrap;
-      // column-gap: 0.5rem;
-      div {
-        width: 300px;
-        label {
-          color: #1f2937;
-          display: block;
-          font-size: 0.625rem;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-        }
-        input {
-          border: 1px solid #e5e7eb;
-          border-radius: 3px;
-          font-size: 1rem;
-          // margin-right: 4.5rem;
-          padding: 0.5rem;
-          &:focus {
-            border-color: #1d4ed8;
-            outline: none;
-          }
-          &[type="password"]:invalid {
-            border-color: #b91c1c;
-          }
+
+      label {
+        color: var(--color-gray);
+        display: block;
+        font-size: var(--font-sm);
+        letter-spacing: 0.0625rem;
+        text-transform: uppercase;
+      }
+
+      input {
+        border: 1px solid var(--color-ltgray);
+        border-radius: 6px;
+        font-size: 0.75rem;
+        height: 2rem;
+        padding: 0.5rem;
+        width: 16.375rem;
+
+        &:focus {
+          border-color: var(--color-blue);
+          outline: none;
         }
       }
     }
   }
+
+  button {
+    display: block;
+  }
+
+  a {
+    color: var(--color-green);
+  }
 }
 
-// main {
-//   background-color: rgb(241, 241, 241);
-//   display: grid;
-//   grid-template-rows: repeat(3, 1fr);
-//   & > * {
-//     padding-left: 3rem;
-//   }
-//   section:first-of-type {
-//     align-self: end;
-//     max-width: 620px;
-//     width: 100%;
-//     p:last-child {
-//       margin-bottom: 0;
-//     }
-//   }
-//   form {
-//     align-self: center;
-//     background-color: white;
-//     padding-top: 1.5rem;
-//     padding-bottom: 1.5rem;
-//     width: 100%;
-//     p {
-//       margin: 0 0 1.5rem;
-//     }
-//     .controller-wrapper {
-//       display: flex;
-//       flex-flow: row wrap;
-//       max-width: 620px;
-//       label {
-//         color: darkslategray;
-//         display: block;
-//         font-size: 0.65rem;
-//         font-weight: 600;
-//         letter-spacing: 1px;
-//         margin-bottom: 0.25rem;
-//         text-transform: uppercase;
-//       }
-//       input {
-//         border: 1px solid #e5e7eb;
-//         border-radius: 2px;
-//         font-size: 1rem;
-//         margin-bottom: 1rem;
-//         margin-right: 3rem;
-//         padding: 0.25rem;
-//         width: 260px;
-//       }
-//     }
-//   }
-//   section:last-child {
-//     align-self: start;
-//     button {
-//       background-color: var(--green);
-//       border: 0;
-//       color: white;
-//     }
-//   }
+.error {
+  color: var(--color-red);
+  display: block;
+  font-size: var(--font-sm);
+  margin-top: 0.25rem;
+  opacity: 0;
+}
+
+// .constrained {
+//   max-width: 41.875rem;
+//   padding-left: 5rem;
+//   width: 1005;
 // }

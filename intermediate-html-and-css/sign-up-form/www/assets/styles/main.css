@@ -1,17 +1,17 @@
-:root {
-  --green: #596d48;
-}
-
-.wrapper {
+.container {
   font: 400 1.25rem "San Fransisco", sans-serif;
   display: grid;
   grid-template-columns: 535px auto;
   min-height: 100vh;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.constrained {
-  max-width: 650px;
+main > *:not(form),
+form > * {
+  max-width: 41.875rem;
+  padding-left: 5rem;
   width: 100%;
 }
 
@@ -46,40 +46,62 @@ header figure figcaption {
 }
 
 main {
-  background-color: #f9fafb;
-  font-weight: 600;
+  --color-white: #f9fafb;
+  --color-gray: #1f2937;
+  --color-ltgray: #e5e7eb;
+  --color-blue: #1d4ed8;
+  --color-red: #b91c1c;
+  --color-green: #596d48;
+  --font-sm: 0.75rem;
+  --gap: 1.625rem;
+  background-color: var(--color-white);
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
-main > * {
-  padding-left: 2rem;
+main > p:first-child {
+  margin-top: 7rem;
 }
 main form {
   background-color: white;
-  height: 18.8125rem;
+  padding-top: 1.4375rem;
 }
-main form .controllers {
+main form .controls {
+  -moz-column-gap: var(--gap);
+       column-gap: var(--gap);
+  row-gap: var(--gap);
   display: flex;
   flex-flow: row wrap;
 }
-main form .controllers div {
-  width: 300px;
-}
-main form .controllers div label {
-  color: #1f2937;
+main form .controls label {
+  color: var(--color-gray);
   display: block;
-  font-size: 0.625rem;
-  letter-spacing: 2px;
+  font-size: var(--font-sm);
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
-main form .controllers div input {
-  border: 1px solid #e5e7eb;
-  border-radius: 3px;
-  font-size: 1rem;
+main form .controls input {
+  border: 1px solid var(--color-ltgray);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  height: 2rem;
   padding: 0.5rem;
+  width: 16.375rem;
 }
-main form .controllers div input:focus {
-  border-color: #1d4ed8;
+main form .controls input:focus {
+  border-color: var(--color-blue);
   outline: none;
 }
-main form .controllers div input[type=password]:invalid {
-  border-color: #b91c1c;
+main button {
+  display: block;
+}
+main a {
+  color: var(--color-green);
+}
+
+.error {
+  color: var(--color-red);
+  display: block;
+  font-size: var(--font-sm);
+  margin-top: 0.25rem;
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */
