@@ -53,7 +53,8 @@ main {
   --color-red: #b91c1c;
   --color-green: #596d48;
   --font-sm: 0.75rem;
-  --gap: 1.625rem;
+  --gap-row: 1.5rem;
+  --gap-col: 1.625rem;
   background-color: var(--color-white);
   font-size: 1.3rem;
   line-height: 1.5;
@@ -66,9 +67,9 @@ main form {
   padding-top: 1.4375rem;
 }
 main form .controls {
-  -moz-column-gap: var(--gap);
-       column-gap: var(--gap);
-  row-gap: var(--gap);
+  -moz-column-gap: var(--gap-col);
+       column-gap: var(--gap-col);
+  row-gap: var(--gap-row);
   display: flex;
   flex-flow: row wrap;
 }
