@@ -29,6 +29,3 @@ function validate() {
 }
 
 btn.addEventListener("click", validate);
-
-// let reg = new RegExp(form[0].pattern);
-// console.log(reg.test(form[0].value));
