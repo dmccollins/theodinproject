@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
 }
 *,
 *:before,
@@ -8,9 +9,70 @@ html {
   margin: 0;
 }
 
-.form-controls {
-  .control {
-    display: flex;
-    flex-flow: column nowrap;
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+
+form {
+  margin: 1rem;
+  .title {
+    margin-bottom: 3rem;
+  }
+  .form-controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+    .control {
+      display: flex;
+      flex-flow: column;
+      label {
+        color: lightslategray;
+        font-size: 0.75rem;
+        margin-bottom: 0.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03125rem;
+      }
+      input {
+        border: 2px solid black;
+        color: black;
+        font-size: 0.85rem;
+        font-family: inherit;
+        letter-spacing: 0.0625rem;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        &:focus {
+          color: darkslategray;
+          border-color: blue;
+          outline: none;
+        }
+      }
+      .error {
+        color: maroon;
+        opacity: 0;
+        font-size: 0.65rem;
+      }
+    }
+  }
+  .submit {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    &:hover {
+      border-color: white;
+      background-color: black;
+      color: white;
+    }
   }
 }
