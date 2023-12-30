@@ -1,10 +1,18 @@
+// create div
 let dimensionsBox = document.createElement("div");
-dimensionsBox.innerHTML = "* Screen width";
 
-document.querySelector(".wrapper").appendChild(dimensionsBox);
+// give div "bottom-bar" class
 dimensionsBox.classList.add("bottom-bar");
 
+// show div
+document.querySelector(".wrapper").appendChild(dimensionsBox);
+
+// set width
+let width = window.innerWidth;
+dimensionsBox.innerHTML = `window.innerWidth = ${width}`;
+
+// reset width on window resize
 window.addEventListener("resize", function (e) {
-	let width = window.innerWidth;
+	width = window.innerWidth;
 	dimensionsBox.innerHTML = `window.innerWidth = ${width}`;
 });
