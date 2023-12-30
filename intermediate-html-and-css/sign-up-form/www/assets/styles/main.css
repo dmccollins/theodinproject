@@ -111,8 +111,9 @@ form .submit:hover {
     padding: 1rem 2rem;
   }
   form .odin-logo {
-    width: 200px;
+    max-width: 200px;
     margin-top: 2rem;
+    width: 100%;
   }
   form .title {
     font-size: 1.5rem;
