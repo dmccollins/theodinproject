@@ -111,7 +111,7 @@ form .submit:hover {
     padding: 1rem 2rem;
   }
   form .odin-logo {
-    width: 90px;
+    width: 200px;
     margin-top: 2rem;
   }
   form .title {
@@ -123,6 +123,6 @@ form .submit:hover {
     margin-bottom: 2rem;
   }
   form .form-controls .control {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
