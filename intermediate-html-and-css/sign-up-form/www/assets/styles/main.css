@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Source+Code+Pro:ital,wght@0,400;0,700;1,300&display=swap");
 html {
   box-sizing: border-box;
   font-family: "Source Code Pro", monospace;
@@ -11,70 +12,91 @@ html {
 }
 
 body {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  background-color: whitesmoke;
+  font-weight: 300;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
 }
 
 form {
+  border: 0.25rem solid black;
+  background-color: whitesmoke;
+  padding: 3rem 4rem;
   margin: 1rem;
 }
 form .title {
   margin-bottom: 3rem;
+  font-weight: inherit;
 }
 form .form-controls {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
-  row-gap: 1rem;
   margin-bottom: 2rem;
 }
 form .form-controls .control {
   display: flex;
   flex-flow: column;
+  margin-bottom: 1.5rem;
 }
 form .form-controls .control label {
   color: lightslategray;
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin-bottom: 0.25rem;
   text-transform: uppercase;
   letter-spacing: 0.03125rem;
+  font-weight: 300;
 }
 form .form-controls .control input {
   border: 2px solid black;
   color: black;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-family: inherit;
   letter-spacing: 0.0625rem;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
+  font-weight: 4;
 }
 form .form-controls .control input:focus {
   color: darkslategray;
-  border-color: blue;
+  border-color: darkslategray;
   outline: none;
 }
 form .form-controls .control .error {
   color: maroon;
   opacity: 0;
-  font-size: 0.65rem;
+  font-size: 0.85rem;
 }
 form .submit {
-  border: 2px solid black;
+  border: 0.2rem solid black;
   background-color: white;
   color: black;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0.75rem 1rem;
-  font-weight: bold;
   font-family: inherit;
   cursor: pointer;
 }
 form .submit:hover {
-  border-color: white;
   background-color: black;
   color: white;
+}
+
+.bottom-bar {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  display: absolute;
+  bottom: 0;
+}
+
+@media (min-width: 755px) {
+  .form-controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
