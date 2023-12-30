@@ -27,9 +27,15 @@ form {
   background-color: whitesmoke;
   padding: 3rem 4rem;
   margin: 1rem;
+  .odin-logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto 2rem;
+  }
   .title {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     font-weight: inherit;
+    text-align: center;
   }
   .form-controls {
     margin-bottom: 2rem;
@@ -92,10 +98,34 @@ form {
   bottom: 0;
 }
 
-@media (min-width: 755px) {
-  .form-controls {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+@media (min-width: 705px) {
+  form {
+    .form-controls {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 704px) {
+  form {
+    padding: 1rem 2rem;
+    .odin-logo {
+      width: 90px;
+      margin-top: 2rem;
+    }
+    .title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+    }
+    .form-controls {
+      margin-bottom: 2rem;
+
+      .control {
+        margin-bottom: 0.75rem;
+      }
+    }
   }
 }

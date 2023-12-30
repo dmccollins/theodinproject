@@ -9,10 +9,10 @@ document.querySelector(".wrapper").appendChild(dimensionsBox);
 
 // set width
 let width = window.innerWidth;
-dimensionsBox.innerHTML = `window.innerWidth = ${width}`;
+dimensionsBox.innerHTML = width;
 
 // reset width on window resize
 window.addEventListener("resize", function (e) {
 	width = window.innerWidth;
-	dimensionsBox.innerHTML = `window.innerWidth = ${width}`;
+	dimensionsBox.innerHTML = width;
 });

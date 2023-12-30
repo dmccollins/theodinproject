@@ -28,9 +28,15 @@ form {
   padding: 3rem 4rem;
   margin: 1rem;
 }
+form .odin-logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto 2rem;
+}
 form .title {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   font-weight: inherit;
+  text-align: center;
 }
 form .form-controls {
   margin-bottom: 2rem;
@@ -92,11 +98,31 @@ form .submit:hover {
   bottom: 0;
 }
 
-@media (min-width: 755px) {
-  .form-controls {
+@media (min-width: 705px) {
+  form .form-controls {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+  }
+}
+@media (max-width: 704px) {
+  form {
+    padding: 1rem 2rem;
+  }
+  form .odin-logo {
+    width: 90px;
+    margin-top: 2rem;
+  }
+  form .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+  }
+  form .form-controls {
+    margin-bottom: 2rem;
+  }
+  form .form-controls .control {
+    margin-bottom: 0.75rem;
   }
 }/*# sourceMappingURL=main.css.map */

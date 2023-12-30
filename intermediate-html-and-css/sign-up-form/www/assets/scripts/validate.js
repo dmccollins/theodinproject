@@ -1,10 +1,10 @@
-let btn = select(".submit"),
-	fname = select("#fname"),
-	lname = select("#lname"),
-	email = select("#email"),
-	phone = select("#phone"),
-	password = select("#password"),
-	confirmPass = select("#confirmPass");
+let btn = document.querySelector(".submit"),
+	fname = document.querySelector("#fname"),
+	lname = document.querySelector("#lname"),
+	email = document.querySelector("#email"),
+	phone = document.querySelector("#phone"),
+	password = document.querySelector("#password"),
+	confirmPass = document.querySelector("#confirmPass");
 
 const form = [fname, lname, email, phone, password, confirmPass];
 
